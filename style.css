@@ -1,0 +1,43 @@
+body{
+    background-color: bisque;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+.calculator-grid{
+    overflow:hidden;
+    max-width: 23rem;
+    margin-top: 2rem;
+}
+
+.display{
+    background-color: black;
+    color:#fff;
+    text-align: right;
+    padding: 12px;
+    font-size: 2em;
+}
+
+.keys{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.btn-equal{
+    background-color: chocolate;
+    grid-column: 4;
+    grid-row: 2 / span 4;
+    color:#fff;
+}
+
+button{
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.btn-operator{
+    background-color: #ccc;
+}
